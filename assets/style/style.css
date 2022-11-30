@@ -1,0 +1,236 @@
+*{
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+.main{
+    width: 100%;
+}
+/* ---------------nav----------------*/ 
+.container-nav{
+    height: 12vh;
+}
+.ul-container{
+    width: 40vw;
+}
+#image-header{
+    height: 5vh;
+}
+/* ---------------header h1----------------*/ 
+.container-header{
+    background-color: rgba(146, 145, 145, 0.247) !important;
+    height: 25vh;
+}
+/* ---------------check---------------*/ 
+.container-check{
+    height:10vh ; 
+    width: 100%;
+}
+.container-check-search{
+    height:10vh ; 
+    width: 60vw;
+}
+/* ---------------search---------------*/ 
+.container-search-bar{
+    width: 30vw;
+    padding: 5vh !important;
+}
+/* ---------------cards---------------*/
+
+.card-image{
+    height: 23vh;
+    padding: 1vh !important;
+}
+.container-cards{
+    width: 100% !important; 
+    height: 50vh;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.container-card{
+    width: 22vw;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.container-card-inf{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.p-price{
+    margin: 0;
+    margin-left: 1vh;
+}
+
+/* ---------------footer---------------*/ 
+.container-footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.logo-footer{
+    height: 7vh;
+    margin-left: 4vh;
+}
+.conteiner-img-logo{
+    width: 80vw;
+}
+/* ---------------Form--------------*/
+.content-form{
+    width: 50vw !important;
+    padding: 5vh !important;
+}
+.conteiner-section{
+    height: 57vh !important;
+}
+
+/* ---------------Media Q---------------*/ 
+@media (min-width: 810px) and (max-width: 974px){
+    .ul-container{
+        width: 60vw;
+    }
+}
+@media (min-width: 660px) and (max-width: 810px){
+    .container-cards{
+        width: 100% !important; 
+        height: 170vh;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important ;
+    }
+    .card-image{
+        height: 23vh;
+        padding: 1vh !important;
+    }
+    .container-card{
+        width: 50vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .container-header{
+        background-color: rgba(146, 145, 145, 0.247) !important;
+        height: 15vh;
+    }
+    .ul-container{
+        width: 60vw;
+    }
+    #image-header{
+        height: 3vh;
+    }
+    .container-search-bar{
+        width: 40vw;
+        padding: 3vh !important;
+    }
+    .container-check-search{
+        height:5vh ; 
+        width: 60vw;
+        font-size: 1.1vh;
+    }
+    .container-check{
+        height:5vh ; 
+        width: 100%;
+    }
+    .container-footer{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+    .p-footer{
+        font-size: 2vh !important;
+    }
+    .logo-footer{
+        height: 4vh;
+        margin-left: 4vh;
+    }
+    .container-footer{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+    .content-form{
+        width: 70vw !important;
+        padding: 5vh !important;
+    }
+}
+@media (min-width: 412px) and (max-width: 660px){
+    .container-boton{
+        font-size: 1vh;
+        display: flex;
+        height: 2.1vh;
+        align-items: center;
+    }
+    #image-header{
+        height: 1.3vh;
+    }
+    .ul-container{
+        width: 80vw;
+    }
+    .container-header{
+        background-color: rgba(146, 145, 145, 0.247) !important;
+        height: 11vh;
+    }
+    .container-nav{
+        height: 8vh;
+        padding: 1vh !important;
+    }
+    .container-search-bar{
+        width: 60vw;
+        padding: 1vh !important;
+    }
+    .container-check-search{
+        height:5vh ;
+        padding: 1 !important;
+        margin: 0 !important; 
+        width: 100vw;
+        font-size: 1.2vh;
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    .form-check-mu{
+        margin: 0 !important;
+    }
+    .container-check{
+        height:10vh ; 
+        width: 100%;
+        display: flex !important;
+        flex-direction: column;
+    }
+    .container-cards{
+        width: 100% !important; 
+        height: 170vh;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important ;
+    }
+    .card-image{
+        height: 23vh;
+        padding: 1vh !important;
+    }
+    .container-card{
+        width: 50vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .logo-footer{
+        height: 4vh;
+        margin-left: 4vh;
+    }
+    .p-footer{
+        font-size: 1.4vh !important;
+    }
+    .content-form{
+        width: 80vw !important;
+        padding: 5vh !important;
+    }
+   
+}
