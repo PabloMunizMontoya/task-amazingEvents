@@ -85,6 +85,69 @@
 .conteiner-section{
     height: 57vh !important;
 }
+/* ---------------Table---------------*/
+table{
+    border: solid 5px;
+    background-color: aliceblue;
+}
+.container-table{
+    width: 100% !important; 
+    height: 90vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+th, td{
+    border: solid 2px;
+    padding: 0.2vh!important;
+    height: 3.5vh;
+}
+.events-satics-container{
+    height: 7vh;
+    background-color: rgb(150, 154, 163) !important;
+}
+/* ---------------Card detail---------------*/
+.container-card-detail{
+    width: 100% !important; 
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: rgba(146, 145, 145, 0.247) !important;
+    
+}
+.card-detail{
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.container-imgn-card-detail{
+    height: 70vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-imagencard{
+    height: 58vh;
+    width: 35vw;
+    display: flex;
+    background-image: url(../images/Books.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75);
+    box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75)
+}
+.container-txtcard{
+    height: 58vh;
+    width: 35vw;
+    display: flex;
+    background-color: rgb(206, 206, 206)
+}
+
 
 /* ---------------Media Q---------------*/ 
 @media (min-width: 810px) and (max-width: 974px){
@@ -159,7 +222,53 @@
         width: 70vw !important;
         padding: 5vh !important;
     }
+    .container-card-detail{
+        width: 100% !important; 
+        height: 120vh;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: rgba(146, 145, 145, 0.247) !important;
+        display: flex !important;
+        flex-direction: column;
+    }
+    .card-detail{
+        height: 100vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-imagencard{
+        height: 40vh;
+        width: 80vw !important;
+        background-image: url(../images/Books.jpg);
+        -webkit-box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75);
+        box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75)
+    }
+    .container-imgn-card-detail{
+        height: 40vh;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-txtcard{
+        height: 40vh;
+        width: 60vw;
+        display: flex;
+        background-color: rgb(206, 206, 206)
+    }
+    .container-table{
+        width: 100% !important; 
+        height: 100vh;
+        margin: 0 !important;
+        padding: 5vh !important;
+        
+    } 
+  
 }
+    
 @media (min-width: 412px) and (max-width: 660px){
     .container-boton{
         font-size: 1vh;
@@ -232,5 +341,56 @@
         width: 80vw !important;
         padding: 5vh !important;
     }
-   
+    .container-card-detail{
+        width: 100% !important; 
+        height: 80vh;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: rgba(146, 145, 145, 0.247) !important;
+        display: flex !important;
+        flex-direction: column;
+    }
+    .card-detail{
+        height: 70vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-imagencard{
+        height: 30vh;
+        width: 80vw !important;
+        background-image: url(../images/Books.jpg);
+        -webkit-box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75);
+        box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75)
+    }
+    .container-imgn-card-detail{
+        height: 30vh;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-txtcard{
+        height: 30vh;
+        width: 60vw;
+        display: flex;
+        background-color: rgb(206, 206, 206);
+        padding: 1vh!important;
+    }
+    .h1-card-detail{
+        font-size: 3vh !important;
+        text-align: center;
+    } 
+    .p-card-detail{
+        font-size: 1.1vh !important;
+    }
+    .container-table{
+        width: 100% !important; 
+        height: 100vh;
+        margin: 0 !important;
+        padding: 5vh !important;
+        
+    } 
 }
