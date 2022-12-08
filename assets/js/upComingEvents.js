@@ -19,7 +19,7 @@ div.innerHTML = ''
 
 for (let element of events) {
     if (element.date >= "2022-01-22") {
-        div.innerHTML += `<div class="card container-card">
+        div.innerHTML += `<div  class="card container-card">
           <img src="${element.image}" class="card-img-top card-image p-1"
           alt="image of activities">
           <div class="container-card-body card-body d-flex row align-items-center">
