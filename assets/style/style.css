@@ -37,19 +37,31 @@
 /* ---------------cards---------------*/
 
 .card-image{
-    height: 23vh;
-    padding: 1vh !important;
+    height: 27vh;
+    padding: 2vh !important;
 }
 .container-cards{
     width: 100% !important; 
-    height: 50vh;
-    margin: 0 !important;
-    padding: 0 !important;
+    height: 280vh;
+    margin: 2 !important;
+    padding: 2 !important;
+}
+.container-cards-past{
+    width: 100% !important; 
+    margin: 2 !important;
+    padding: 2 !important;
+}
+.container-cards-upcomming{
+    width: 100% !important; 
+    margin: 2 !important;
+    padding: 2 !important;
 }
 .container-card{
-    width: 22vw;
-    margin: 0 !important;
+    width: 20vw;
+    height: 25rem;
+    margin: 2vh !important;
     padding: 0 !important;
+    
 }
 .container-card-inf{
     height: 5vh;
@@ -60,6 +72,10 @@
 .p-price{
     margin: 0;
     margin-left: 1vh;
+}
+.container-card-body{
+    width: 95%;
+    margin-left: 0.2vh !important;
 }
 
 /* ---------------footer---------------*/ 
@@ -158,22 +174,34 @@ th, td{
 @media (min-width: 660px) and (max-width: 810px){
     .container-cards{
         width: 100% !important; 
-        height: 170vh;
+        height: 700vh;
         margin: 0 !important;
-        padding: 0 !important;
+        padding: 2 !important;
         display: flex !important;
-        flex-direction: column !important;
+        justify-content: center !important;
         align-items: center !important ;
     }
+    .container-cards-past{
+        display: flex !important;
+        justify-content: center !important;
+        height: 360vh;
+    }
+    .container-cards-upcomming{
+        display: flex !important;
+        justify-content: center !important;
+        height: 360vh;
+    }
+    
     .card-image{
         height: 23vh;
         padding: 1vh !important;
     }
     .container-card{
         width: 50vw !important;
-        margin: 0 !important;
+        margin: 4 !important;
         padding: 0 !important;
     }
+    
     .container-header{
         background-color: rgba(146, 145, 145, 0.247) !important;
         height: 15vh;
@@ -314,20 +342,29 @@ th, td{
     }
     .container-cards{
         width: 100% !important; 
-        height: 170vh;
+        height: 700vh;
         margin: 0 !important;
         padding: 0 !important;
         display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important ;
+        justify-content: center !important ;
+    }
+    .container-cards-past{
+        display: flex !important;
+        justify-content: center !important;
+        height: 360vh;
+    }
+    .container-cards-upcomming{
+        display: flex !important;
+        justify-content: center !important;
+        height: 360vh;
     }
     .card-image{
         height: 23vh;
         padding: 1vh !important;
     }
     .container-card{
-        width: 50vw !important;
-        margin: 0 !important;
+        width: 60vw !important;
+        margin: 2 !important;
         padding: 0 !important;
     }
     .logo-footer{
