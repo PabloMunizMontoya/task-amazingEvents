@@ -27,12 +27,16 @@
 }
 .container-check-search{
     height:10vh ; 
-    width: 60vw;
+    width: 70vw;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 5vh!important;
+    
 }
 /* ---------------search---------------*/ 
 .container-search-bar{
     width: 30vw;
-    padding: 5vh !important;
+    padding: 3vh !important;
 }
 /* ---------------cards---------------*/
 
@@ -42,7 +46,7 @@
 }
 .container-cards{
     width: 100% !important; 
-    height: 280vh;
+    height: 100%;
     margin: 2 !important;
     padding: 2 !important;
 }
@@ -128,13 +132,14 @@ th, td{
     height: 100vh;
     margin: 0 !important;
     padding: 0 !important;
-    background-color: rgba(146, 145, 145, 0.247) !important;
+    background-color: rgba(197, 197, 197, 0.548) !important;
     
 }
 .card-detail{
     height: 70vh;
     width: 80vw;
     display: flex;
+    border-radius: 30px !important;
     justify-content: space-around;
     
 }
@@ -144,26 +149,41 @@ th, td{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30px !important;
+    background-color: rgb(255, 255, 255);
 }
-.container-imagencard{
-    height: 58vh;
-    width: 35vw;
-    display: flex;
-    background-image: url(../images/Books.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75);
-    box-shadow: -5px -8px 11px -3px rgba(0,0,0,0.75)
-}
+
 .container-txtcard{
+    height: 52vh;
+    width: 30vw;
+    display: flex;
+    
+    background-color: rgb(206, 206, 206);
+    -webkit-box-shadow: 24px 25px 43px -31px rgba(0,0,0,0.75);
+    -moz-box-shadow: 24px 25px 43px -31px rgba(0,0,0,0.75);
+    box-shadow: 24px 25px 43px -31px rgba(0,0,0,0.75);
+    border-radius: 20px!important;
+}
+.container-imagen-card-detail{
     height: 58vh;
     width: 35vw;
     display: flex;
     background-color: rgb(206, 206, 206)
 }
-
+#contenedordeimagen{
+    
+    height: 75%;
+    width: 75%;
+    
+    
+    
+}
+.card-img-top{
+     object-fit: content;
+  width:100%;
+  height:100%;
+  border-radius: 5px;
+}
 
 /* ---------------Media Q---------------*/ 
 @media (min-width: 810px) and (max-width: 974px){
@@ -171,7 +191,7 @@ th, td{
         width: 60vw;
     }
 }
-@media (min-width: 660px) and (max-width: 810px){
+@media (min-width: 920px) and (max-width: 1200px){
     .container-cards{
         width: 100% !important; 
         height: 700vh;
@@ -297,7 +317,7 @@ th, td{
   
 }
     
-@media (min-width: 412px) and (max-width: 660px){
+@media (min-width: 412px) and (max-width: 920px){
     .container-boton{
         font-size: 1vh;
         display: flex;
@@ -323,26 +343,30 @@ th, td{
         padding: 1vh !important;
     }
     .container-check-search{
-        height:5vh ;
-        padding: 1 !important;
-        margin: 0 !important; 
+        height:70vh ;
+        padding: 0vh !important;
+        margin-left: 3vh;
         width: 100vw;
         font-size: 1.2vh;
         display: flex !important;
-        justify-content: space-around !important;
+        flex-direction: column;
+        justify-content: space-between !important;
+        align-items: flex-start!important;
     }
     .form-check-mu{
         margin: 0 !important;
     }
     .container-check{
-        height:10vh ; 
+        height:30vh ; 
         width: 100%;
         display: flex !important;
         flex-direction: column;
+        padding: 1vh!important;
+        align-items: flex-start!important;
     }
     .container-cards{
         width: 100% !important; 
-        height: 700vh;
+        height: 100%;
         margin: 0 !important;
         padding: 0 !important;
         display: flex !important;
