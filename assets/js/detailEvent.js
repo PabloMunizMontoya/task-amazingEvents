@@ -1,17 +1,21 @@
-/* let queryString = location.search
-let params = new URLSearchParams(queryString)
-let id = params.get('id')  */
 
-let events = data.events;
-let idR = new URLSearchParams(location.search).get('id')
-console.log(idR)
+// ---------------- Traer secciones del html y crear variable con dicha sección  -----------------
+
 let containerCardDetail = document.getElementById('cardDetail')
 
+// ---------------- fetch -------------------------
+let events; 
+let idR;
+let  profile 
 
-const  profile = events.find(item => item._id == idR)
-console.log(profile)
+fetch("https://amazing-events.onrender.com/api/events")
+    .then((result) => result.json())
+    .then((data) => {
+        events = data.events;
+        idR = new URLSearchParams(location.search).get('id')
+        profile = events.find(item => item._id == idR)
 
-containerCardDetail.innerHTML =` <div class="container-imgn-card-detail">
+        containerCardDetail.innerHTML =` <div class="container-imgn-card-detail">
 <div id="contenedordeimagen">   
 <img src="${profile.image}" class="card-img-top  p-1 shadow p-3 mb-5 bg-white rounded"alt="image of activities">
 </div> 
@@ -26,3 +30,9 @@ containerCardDetail.innerHTML =` <div class="container-imgn-card-detail">
      <p class="p-card-detail fs-7"> ${ 'assistance: '+ profile.assistance} </p>
  </div>  
 </div>`
+
+    })    
+
+  
+
+

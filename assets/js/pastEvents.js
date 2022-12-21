@@ -1,10 +1,35 @@
+// ---------------- Traer secciones del html y crear variable con dicha sección  -----------------
+
 let cardContainer = document.getElementById('cards');
 let containerCheck = document.getElementById("checkbox");
 let searchBar = document.getElementById('busqueda-js')
 
-let events = data.events
-let currentDate = data.currentDate 
-let pastEvents = events.filter(p => p.date < currentDate  )
+// ---------------- fetch -------------------------
+
+
+let currentDate;
+let events;
+let pastEvents;
+
+
+fetch("https://amazing-events.onrender.com/api/events")
+    .then((result) => result.json())
+    .then((data) => {
+        events = data.events;
+        currentDate = data.currentDate 
+        pastEvents = events.filter(p => p.date < currentDate  )
+        console.log(pastEvents)
+        renderPastCards(pastEvents , cardContainer);
+        let arrayWithoutRepeatCategories = [... new Set( events.map( element =>  element.category  ) ) ] ;
+        renderCategoriesOnCheckBoxes(arrayWithoutRepeatCategories, containerCheck);
+
+    });    
+
+
+
+
+
+
 
 function renderPastCards(array, container) {
   container.innerHTML = "";
@@ -28,9 +53,7 @@ function renderPastCards(array, container) {
   });
   container.innerHTML = emptyContainer
 };
-renderPastCards(pastEvents , cardContainer);
 
-let arrayWithoutRepeatCategories = [... new Set( events.map( element =>  element.category  ) ) ] ;
 
 function renderCategoriesOnCheckBoxes ( categories, container) {
   categories.forEach((element) => {
@@ -40,7 +63,7 @@ function renderCategoriesOnCheckBoxes ( categories, container) {
   </div>`;
   });
 }
-renderCategoriesOnCheckBoxes(arrayWithoutRepeatCategories, containerCheck);
+
   
 
 containerCheck.addEventListener("change", (e) => {

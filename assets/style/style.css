@@ -109,12 +109,16 @@
 table{
     border: solid 5px;
     background-color: aliceblue;
+    margin: 2vw !important;
 }
 .container-table{
     width: 100% !important; 
-    height: 90vh;
+    height: 130%;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 2vw !important;
+    display: flex;
+    flex-direction: column;
+    
     
 }
 th, td{
@@ -126,6 +130,7 @@ th, td{
     height: 7vh;
     background-color: rgb(150, 154, 163) !important;
 }
+
 /* ---------------Card detail---------------*/
 .container-card-detail{
     width: 100% !important; 

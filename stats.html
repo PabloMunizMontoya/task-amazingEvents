@@ -39,24 +39,31 @@
         <h1>STATS</h1>
     </header>
     <main class="main">
-        <section class="bg-secondary d-flex justify-content-around align-items-center container-table m-0">
-            <table>
-                <tbody>
-                    <tr class="events-satics-container">
-                        <td class="p-2 fs-3" colspan="3">Events statistics</td>
+        <section class="container-table bg-secondary m-0">
+            <table class="tableclass">
+                <tbody >
+                    <tr >
+                        <td class="p-2 fs-3 fw-bold" colspan="3">Events statistics</td>
                     </tr>
                     <tr>
-                        <td>Events with highest percentage of attendance</td>
-                        <td>Events with lowest percentage of attendance</td>
-                        <td>Events with larger capacity</td>
+                        <td class="fw-bold fs-5">Events with highest percentage of attendance</td>
+                        <td class="fw-bold fs-5">Events with lowest percentage of attendance</td>
+                        <td class="fw-bold fs-5">Events with larger capacity</td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                </tbody>
+                <tbody id="events-statics-table">
+                        <tr >
+                            <td id="td1"></td>
+                            <td id="td2"></td>
+                            <td id="td3"></td>
+                        </tr>
+                </tbody>
+                
+            </table>
+            <table class="tableclass"  id="upcoming-table">
+                <tbody id="upcoming-container">
                     <tr class="events-satics-container">
-                        <td class="fs-3 p-2" colspan="3">Upcomig events statistics by category</td>
+                        <td class="fs-3 p-2 fw-bold" colspan="3">Upcomig events statistics by category</td>
                     </tr>
                     <tr>
                         <td>Category</td>
@@ -78,6 +85,30 @@
                         <td></td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tableclass" >
+                <tbody id="past-container">
                     <tr class="events-satics-container">
                         <td class="fs-3 p-2" colspan="3">Past events statistics by category</td>
                     </tr>
@@ -131,6 +162,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+        <script src='./assets/js/stats.js'></script>
 </body>
 
 </html>

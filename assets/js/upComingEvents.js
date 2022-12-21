@@ -1,9 +1,30 @@
+// ---------------- Traer secciones del html y crear variable con dicha sección  -----------------
+
+
 let cardContainer = document.getElementById('cards');
 let containerCheck = document.getElementById("checkbox");
 let searchBar = document.getElementById('busqueda-js')
 
-let events = data.events
-let futureEvents = events.filter(p => p.date >= "2022-01-22" )
+// ---------------- fetch -------------------------
+
+let currentDate;
+let events;
+let futureEvents;
+
+
+fetch("https://amazing-events.onrender.com/api/events")
+    .then((result) => result.json())
+    .then((data) => {
+        events = data.events;
+        currentDate = data.currentDate 
+        futureEvents = events.filter(p => p.date >= "2022-01-22" )
+        
+        renderFutureCards(futureEvents , cardContainer);
+        let arrayWithoutRepeatCategories = [... new Set( events.map( element =>  element.category  ) ) ] ;
+        renderCategoriesOnCheckBoxes(arrayWithoutRepeatCategories, containerCheck);
+
+    });    
+
 
 function renderFutureCards(array, container) {
   container.innerHTML = "";
@@ -27,10 +48,7 @@ function renderFutureCards(array, container) {
   });
   container.innerHTML = emptyContainer
 };
-renderFutureCards(futureEvents , cardContainer);
 
-
-let arrayWithoutRepeatCategories = [... new Set( events.map( element =>  element.category  ) ) ] ;
 
 function renderCategoriesOnCheckBoxes ( categories, container) {
   categories.forEach((element) => {
@@ -40,7 +58,7 @@ function renderCategoriesOnCheckBoxes ( categories, container) {
   </div>`;
   });
 }
-renderCategoriesOnCheckBoxes(arrayWithoutRepeatCategories, containerCheck);
+
   
 containerCheck.addEventListener("change", (e) => {
   let filterByTwo = corssFilters (futureEvents)
